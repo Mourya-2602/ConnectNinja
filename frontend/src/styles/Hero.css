@@ -165,9 +165,14 @@
     box-shadow: 0 4px 24px rgba(182,247,176,0.18);
 }
 .hero-email-note {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: #888;
-    margin-top: 0.7rem;
+    margin-top: 0.2rem;
+    text-align:left;
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 0;
+    display: block;
 }
 
 .social-scroll-container {

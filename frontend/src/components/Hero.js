@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Hero.css';
 
 const socialPlatforms = [
@@ -41,8 +42,10 @@ const socialPlatforms = [
   }
 ];
 
-const Hero = () => {
+const Hero = ({ isLoggedIn, username }) => {
   const scrollRef = useRef(null);
+  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,24 +62,43 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleGetStarted = (e) => {
+    e.preventDefault();
+    if (email) {
+      navigate('/login', { state: { email } });
+    }
+  };
+
   return (
     <section className="hero-section-light mt-navbar-gap">
       <Container>
         <Row className="justify-content-center align-items-center">
           <Col lg={7} className="text-center">
-            <h1 className="hero-headline">Turn Clicks into Customers with ConnectNinja</h1>
-            <div className="hero-email-form">
-              <Form className="d-flex flex-column flex-md-row align-items-center justify-content-center mt-4">
-                <Form.Control
-                  type="email"
-                  placeholder="Enter your email..."
-                  className="hero-email-input"
-                />
-                <Button type="submit" className="get-started-btn ms-md-3 mt-3 mt-md-0">
-                  Get started now →
-                </Button>
-              </Form>
-            </div>
+            <h1 className="hero-headline">
+              {isLoggedIn && username
+                ? `ConnectNinja Welcomes You "${username}"`
+                : 'Turn Clicks into Customers with ConnectNinja'}
+            </h1>
+            {!isLoggedIn && (
+              <div className="hero-email-form">
+                <Form className="d-flex flex-column flex-md-row align-items-center justify-content-center mt-4" onSubmit={handleGetStarted}>
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter your email..."
+                    className="hero-email-input"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    required
+                  />
+                  <Button type="submit" className="get-started-btn ms-md-3 mt-3 mt-md-0">
+                    Get started now →
+                  </Button>
+                </Form>
+                <div className="hero-email-note">
+                  Note : By entering your email, you agree to get emails from connect ninja
+                </div>
+              </div>
+            )}
             <p className="hero-subheadline">
               Struggling to get real results from social media? At ConnectNinja, we blend creativity with
               proven strategy to help your brand stand out, attract the right audience, and turn casual

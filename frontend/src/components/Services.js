@@ -37,6 +37,7 @@ const Services = () => {
         <Row className="justify-content-center text-center mb-5">
           <Col lg={8}>
             <h2 className="section-title">What We Do Best</h2>
+            <p className="section-intro" style={{fontSize: '1.25rem', color: '#444', fontWeight: 500, marginBottom: '2.2rem'}}> We Make your identity stand out with pro visuals and content strategy.</p>
           </Col>
         </Row>
 

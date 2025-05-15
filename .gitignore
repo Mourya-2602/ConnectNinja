@@ -1,5 +1,7 @@
 # Dependencies
 /node_modules
+/frontend/node_modules/ 
+/backend/node_modules/ 
 /.pnp
 .pnp.js
 
@@ -50,7 +52,4 @@ yarn-error.log*
 
 # Misc
 .DS_Store
-Thumbs.db
-
-# Ignore node_modules in frontend
-/frontend/node_modules/ 
+Thumbs.db 

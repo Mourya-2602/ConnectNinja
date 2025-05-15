@@ -10,19 +10,34 @@ import GrowthPlan from './components/GrowthPlan';
 import Contact from './components/Contact';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './components/LoginPage';
+import RegisterPage from './components/RegisterPage';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
     <div className="App">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-      <NavigationBar />
-      <Hero />
-      <Services />
-      <GrowthPlan />
-      <Contact />
-      <Newsletter />
-      <About />
-      <Footer />
+      <Router>
+        <NavigationBar />
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Services />
+              <GrowthPlan />
+              <Contact />
+              <Newsletter />
+              <About />
+              <Footer />
+            </>
+          } />
+        </Routes>
+      </Router>
     </div>
   );
 }
