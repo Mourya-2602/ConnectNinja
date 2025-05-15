@@ -76,9 +76,6 @@ const Hero = () => {
                   Get started now →
                 </Button>
               </Form>
-              {/* <div className="hero-email-note">
-                By entering your email, you agree to receive emails from ConnectNinja.
-              </div> */}
             </div>
             <p className="hero-subheadline">
               Struggling to get real results from social media? At ConnectNinja, we blend creativity with

@@ -5,8 +5,15 @@ import '../styles/About.css';
 const About = () => {
   const coFounders = [
     {
-      name: "Yatharth Deheriya",
+      name: "Siddarth Belwanshi",
       role: "Co-Founder & CEO",
+      bio: "Leads innovation and strategic growth at ConnectNinja",
+      linkedin: "https://linkedin.com/in/yatharth-deheriya",
+      img: "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      name: "Yatharth Deheriya",
+      role: "Co-Founder ",
       bio: "Leads brand strategy and business growth.",
       linkedin: "https://linkedin.com/in/yatharth-deheriya",
       img: "https://randomuser.me/api/portraits/men/32.jpg"
@@ -48,20 +55,20 @@ const About = () => {
         </Row>
         <Row className="co-founders-section">
           {coFounders.map((founder, index) => (
-            <Col lg={6} key={index} className="mb-4">
-              <Card className="founder-card">
+            <Col lg={4} key={index} className="mb-4">
+              <Card className="founder-card h-100">
                 <Card.Body className="text-center">
-                  <div className="founder-image mb-3">
-                    <img src={founder.img} alt={founder.name} className="founder-avatar" />
+                  <div className="founder-image mb-2">
+                    <img src={founder.img} alt={founder.name} className="founder-avatar" style={{ width: '100px', height: '100px' }} />
                   </div>
-                  <h3 className="founder-name">{founder.name}</h3>
-                  <p className="founder-role">{founder.role}</p>
-                  <p className="founder-bio">{founder.bio}</p>
+                  <h3 className="founder-name h5">{founder.name}</h3>
+                  <p className="founder-role small">{founder.role}</p>
+                  <p className="founder-bio small">{founder.bio}</p>
                   <a 
                     href={founder.linkedin} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="linkedin-button"
+                    className="linkedin-button btn btn-sm btn-outline-primary"
                   >
                     LinkedIn
                   </a>
