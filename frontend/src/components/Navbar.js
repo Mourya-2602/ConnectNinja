@@ -6,14 +6,15 @@ import '../styles/Navbar.css';
 const NavigationBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const username = location.pathname === '/home' && location.state && location.state.username ? location.state.username : '';
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top" style={{ marginBottom: '2.5rem' }}>
       <Container>
         {location.pathname === '/home' ? (
-          <Navbar.Brand className="brand-text"><span role="img" aria-label="ninja" style={{marginRight: '10px', fontSize: '1.5em', verticalAlign: 'middle'}}>🥷</span>ConnectNinja Welcomes You </Navbar.Brand>
+          <Navbar.Brand className="brand-text"><span role="img" aria-label="ninja" style={{marginRight: '10px', fontSize: '1.5em', verticalAlign: 'middle'}}>🥷</span>CONNECTNINJA Welcomes You {username && `"${username}"`}</Navbar.Brand>
         ) : (
-          <Navbar.Brand as={Link} to="/" className="brand-text"><span role="img" aria-label="ninja" style={{marginRight: '10px', fontSize: '1.5em', verticalAlign: 'middle'}}>🥷</span>ConnectNinja</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/" className="brand-text"><span role="img" aria-label="ninja" style={{marginRight: '10px', fontSize: '1.5em', verticalAlign: 'middle'}}>🥷</span>CONNECTNINJA</Navbar.Brand>
         )}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">

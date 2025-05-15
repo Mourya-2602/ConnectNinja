@@ -74,11 +74,7 @@ const Hero = ({ isLoggedIn, username }) => {
       <Container>
         <Row className="justify-content-center align-items-center">
           <Col lg={7} className="text-center">
-            <h1 className="hero-headline">
-              {isLoggedIn && username
-                ? `ConnectNinja Welcomes You "${username}"`
-                : 'Turn Clicks into Customers with ConnectNinja'}
-            </h1>
+            <h1 className="hero-headline">Turn Clicks into Customers with ConnectNinja</h1>
             {!isLoggedIn && (
               <div className="hero-email-form">
                 <Form className="d-flex flex-column flex-md-row align-items-center justify-content-center mt-4" onSubmit={handleGetStarted}>
