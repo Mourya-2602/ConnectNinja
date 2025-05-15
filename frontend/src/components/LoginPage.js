@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
+
 const LoginPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
