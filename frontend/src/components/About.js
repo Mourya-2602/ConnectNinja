@@ -5,15 +5,8 @@ import '../styles/About.css';
 const About = () => {
   const coFounders = [
     {
-      name: "Siddarth Belwanshi",
-      role: "Co-Founder & CEO",
-      bio: "Leads innovation and strategic growth at ConnectNinja",
-      linkedin: "https://linkedin.com/in/yatharth-deheriya",
-      img: "https://randomuser.me/api/portraits/men/32.jpg"
-    },
-    {
       name: "Yatharth Deheriya",
-      role: "Co-Founder ",
+      role: "Founder ",
       bio: "Leads brand strategy and business growth.",
       linkedin: "https://linkedin.com/in/yatharth-deheriya",
       img: "https://randomuser.me/api/portraits/men/32.jpg"
@@ -24,6 +17,13 @@ const About = () => {
       bio: "Heads content direction and creative campaigns.",
       linkedin: "https://linkedin.com/in/rajul-dew",
       img: "https://randomuser.me/api/portraits/men/76.jpg"
+    },
+    {
+      name: "Siddarth Belwanshi",
+      role: "Co-Founder & CEO",
+      bio: "Leads innovation and strategic growth at ConnectNinja",
+      linkedin: "https://linkedin.com/in/yatharth-deheriya",
+      img: "https://randomuser.me/api/portraits/men/32.jpg"
     }
   ];
 
@@ -50,7 +50,7 @@ const About = () => {
         {/* Co-Founders Section */}
         <Row className="justify-content-center mb-4">
           <Col lg={12} className="text-center">
-            <h3 className="cofounders-heading">Co Founders</h3>
+            <h3 className="cofounders-heading"> Our Founder and Co Founders</h3>
           </Col>
         </Row>
         <Row className="co-founders-section">

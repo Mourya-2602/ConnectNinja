@@ -29,6 +29,9 @@ const Contact = () => {
           <Col lg={8}>
             <h2 className="section-title">Let's Talk Strategy</h2>
           </Col>
+          <Col lg={8}>
+            <p className="contact-subtext" >Have questions? Want to inquire about our solutions? Please fill out your information to get in touch. Maybe you're looking for scalable, ROI+ growth. On perhaps you need help with your channel strategy. Our digital marketing experts love answering complex questions.</p>
+          </Col>
         </Row>
 
         <Row className="justify-content-center">
