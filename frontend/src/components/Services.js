@@ -1,64 +1,74 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../styles/Services.css';
 
+// Import images
+import socialMediaManagement from '../assets/SocialMediaManagement.jpg';
+import analyticsReporting from '../assets/Analytics_Reporting.jpg';
+import influencerMarketing from '../assets/InfluencerMarketing.jpg';
+import paidAdvertising from '../assets/PaidAdvertising.jpg';
+import websiteBuilding from '../assets/WebsiteBuilding.jpg';
+import contentCreation from '../assets/ContentCreation.jpg';
+
 const Services = () => {
-  const services = [
-    {
-      title: "Social Media Management",
-      description: "We handle your brand's social presence like pros—planning, posting, and engaging daily.",
-      icon: "📱"
-    },
-    {
-      title: "Content Creation",
-      description: "Scroll-stopping posts, reels, and visuals designed to go viral.",
-      icon: "🎨"
-    },
-    {
-      title: "Paid Advertising",
-      description: "Ad campaigns with razor-sharp targeting to bring real ROI.",
-      icon: "💰"
-    },
-    {
-      title: "Influencer Marketing",
-      description: "Collaborate with creators who influence your audience's decisions.",
-      icon: "🌟"
-    },
-    {
-      title: "Analytics & Reporting",
-      description: "Track growth with clear, real-time data reports and insights.",
-      icon: "📊"
-    }
-  ];
-
   return (
-    <section id="services" className="services-section">
-      <Container>
-        <Row className="justify-content-center text-center mb-5">
-          <Col lg={8}>
-            <h2 className="section-title">What We Do Best</h2>
-            <p className="section-intro" style={{fontSize: '1.25rem', color: '#444', fontWeight: 500, marginBottom: '2.2rem'}}> We Make your identity stand out with pro visuals and content strategy.</p>
-          </Col>
-        </Row>
+    <div className="services-container">
+      <h2 className="services-title">Our Services</h2>
+      <p className="services-subtext">A full-stack suite of digital services to help your brand grow faster, smarter and stronger online</p>
+      {/* Full width section */}
+      <div className="service-item full-width social-media">
+        <img src={socialMediaManagement} alt="Social Media Management" />
+        <div className="service-content">
+          <h3>Social Media Management</h3>
+          <p>Transform your social media presence with our comprehensive management services. We handle everything from content creation to community engagement, ensuring your brand maintains a strong and consistent voice across all platforms.</p>
+        </div>
+      </div>
 
-        <Row className="g-4">
-          {services.map((service, index) => (
-            <Col lg={4} md={6} key={index}>
-              <Card className="service-card h-100">
-                <Card.Body className="text-center">
-                  <div className="service-icon mb-4">
-                    {service.icon}
-                  </div>
-                  <h3 className="service-title">{service.title}</h3>
-                  <p className="service-description">{service.description}</p>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
+      {/* Two column section */}
+      <div className="service-row">
+        <div className="service-item analytics">
+          <img src={analyticsReporting} alt="Analytics & Reporting" />
+          <div className="service-content">
+            <h3>Analytics & Reporting</h3>
+            <p>Gain valuable insights into your digital performance with our detailed analytics and reporting services. We track key metrics and provide actionable recommendations to optimize your strategy.</p>
+          </div>
+        </div>
+        <div className="service-item influencer">
+          <img src={influencerMarketing} alt="Influencer Marketing" />
+          <div className="service-content">
+            <h3>Influencer Marketing</h3>
+            <p>Connect with the right influencers to amplify your brand message. Our strategic approach helps you build authentic partnerships that drive engagement and conversions.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Two column section */}
+      <div className="service-row">
+        <div className="service-item advertising">
+          <img src={paidAdvertising} alt="Paid Advertising" />
+          <div className="service-content">
+            <h3>Paid Advertising</h3>
+            <p>Maximize your ROI with our targeted paid advertising campaigns. We create and optimize ads across multiple platforms to reach your ideal audience and achieve your business goals.</p>
+          </div>
+        </div>
+        <div className="service-item website">
+          <img src={websiteBuilding} alt="Website Building" />
+          <div className="service-content">
+            <h3>Website Building</h3>
+            <p>Create a stunning online presence with our custom website development services. We build responsive, user-friendly websites that convert visitors into customers.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Full width section */}
+      <div className="service-item full-width content">
+        <img src={contentCreation} alt="Content Creation" />
+        <div className="service-content">
+          <h3>Content Creation</h3>
+          <p>Engage your audience with compelling content that tells your brand story. From blog posts to social media content, we create materials that resonate with your target audience and drive engagement.</p>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Services; 
+export default Services;

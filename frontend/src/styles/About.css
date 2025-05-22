@@ -178,87 +178,17 @@
 }
 
 .cofounders-heading {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     font-weight: 800;
+    font-family: 'Inter', sans-serif;
     color: #ff4d4d;
     margin-bottom: 2.2rem;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.coreteam-heading {
-    font-size: 2.1rem;
-    font-weight: 800;
-    color: #0077b5;
-    margin-bottom: 2.2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.team-slider-horizontal {
-    display: flex;
-    flex-direction: row;
-    gap: 2.2rem;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
-    scrollbar-width: thin;
-    scrollbar-color: #b6f7b0 #f8f9fa;
-    justify-content: center;
-    align-items: center;
-}
-.team-slider-horizontal::-webkit-scrollbar {
-    height: 8px;
-}
-.team-slider-horizontal::-webkit-scrollbar-thumb {
-    background: #b6f7b0;
-    border-radius: 4px;
-}
-.team-card-small {
-    min-width: 200px;
-    max-width: 220px;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-    border: none;
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin-bottom: 0;
-    flex: 0 0 auto;
-}
-.team-card-small:hover {
-    transform: translateY(-6px) scale(1.04);
-    box-shadow: 0 8px 24px rgba(255,77,77,0.13);
-}
-.team-avatar {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #b6f7b0;
-    box-shadow: 0 2px 8px rgba(182,247,176,0.12);
-    transition: box-shadow 0.2s, border-color 0.2s;
-    cursor: pointer;
-}
-.team-card-small:hover .team-avatar {
-    border-color: #ff4d4d;
-    box-shadow: 0 4px 16px rgba(255,77,77,0.18);
-}
-.team-name {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 0.1rem;
-}
-.team-role {
-    font-size: 0.95rem;
-    color: #888;
-    margin-bottom: 0;
-}
-
-.team-members-section {
-    margin-bottom: 4.5rem;
-}
-
 .about-section .section-title {
     margin-top: 2.5rem;
+    font-family: 'Inter', sans-serif;
     color: #111 !important;
-} 
+}

@@ -1,0 +1,111 @@
+.methodology-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.methodology-section .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.methodology-section .ending-text {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-top: 40px;
+  color: #333;
+  font-weight: 600;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.step-col {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 280px;
+  max-width: 350px;
+  margin: 10px;
+}
+
+.step-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.step-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.step-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.separator-col {
+  margin: 0 10px;
+}
+
+.separator-arrow {
+  font-size: 2rem;
+  color: #706b6b;
+}
+
+@media (max-width: 768px) {
+  .methodology-section {
+    padding: 60px 0;
+  }
+
+  .methodology-section .section-title {
+    font-size: 2rem;
+  }
+
+  .methodology-section ul li {
+    font-size: 1rem;
+  }
+
+  .methodology-section .ending-text {
+    font-size: 1.1rem;
+  }
+
+  .steps-container {
+    flex-direction: column;
+  }
+
+  .step-col {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .separator-col {
+    margin: 10px 0;
+    transform: rotate(90deg);
+  }
+
+  .separator-arrow {
+    font-size: 1.8rem;
+  }
+} 
