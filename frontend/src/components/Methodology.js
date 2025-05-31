@@ -11,8 +11,6 @@ const Methodology = () => {
             <h2 className="section-title">Why Choose Us?</h2>
           </Col>
         </Row>
-        
-        {/* Steps Section */}
         <Row className="steps-container justify-content-center">
           <Col md={4} className="step-col">
             <Card className="step-card">
@@ -31,7 +29,7 @@ const Methodology = () => {
               <Card.Body>
                 <div className="step-number">Step 02</div>
                 <div className="step-title">We Bring Ideas to Life </div>
-                <p className="step-description">Stunning websites, engaging content, and viral social media campaigns with the latest digital trends our experts ensure your brand stands out.</p>
+                <p className="step-description">Stunning websites, engaging content and viral social media campaigns with the latest digital trends ensure your brand stands out.</p>
               </Card.Body>
             </Card>
           </Col>
@@ -43,7 +41,7 @@ const Methodology = () => {
               <Card.Body>
                 <div className="step-number">Step 03</div>
                 <div className="step-title">We Grow with You </div>
-                <p className="step-description">We don't just launch and leave; we track, optimize, and refine so your business keeps evolving.</p>
+                <p className="step-description">We don't just launch and leave. We track, optimize, and refine so your business keeps evolving and growing.</p>
               </Card.Body>
             </Card>
           </Col>

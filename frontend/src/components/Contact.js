@@ -10,6 +10,7 @@ const Contact = () => {
     message: ''
   });
 
+  const [errors, setErrors] = useState({});
   const [status, setStatus] = useState({
     type: '',
     message: ''
@@ -17,15 +18,50 @@ const Contact = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const validateForm = () => {
+    const newErrors = {};
+    
+    if (formData.name.length < 2) {
+      newErrors.name = 'Name must be at least 2 characters long';
+    }
+    
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address';
+    }
+    
+    if (formData.subject.length < 3) {
+      newErrors.subject = 'Subject must be at least 3 characters long';
+    }
+    
+    if (formData.message.length < 10) {
+      newErrors.message = 'Message must be at least 10 characters long';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+    if (errors[name]) {
+      setErrors(prev => ({
+        ...prev,
+        [name]: ''
+      }));
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
     setStatus({ type: '', message: '' });
 
@@ -51,6 +87,7 @@ const Contact = () => {
           subject: '',
           message: ''
         });
+        setErrors({});
       } else {
         throw new Error(data.error || 'Failed to send message');
       }
@@ -100,7 +137,11 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       disabled={isSubmitting}
+                      isInvalid={!!errors.name}
                     />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.name}
+                    </Form.Control.Feedback>
                   </Form.Group>
                 </Col>
                 <Col md={6}>
@@ -113,7 +154,11 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       disabled={isSubmitting}
+                      isInvalid={!!errors.email}
                     />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.email}
+                    </Form.Control.Feedback>
                   </Form.Group>
                 </Col>
               </Row>
@@ -127,7 +172,11 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isSubmitting}
+                  isInvalid={!!errors.subject}
                 />
+                <Form.Control.Feedback type="invalid">
+                  {errors.subject}
+                </Form.Control.Feedback>
               </Form.Group>
 
               <Form.Group className="mb-4">
@@ -140,7 +189,11 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isSubmitting}
+                  isInvalid={!!errors.message}
                 />
+                <Form.Control.Feedback type="invalid">
+                  {errors.message}
+                </Form.Control.Feedback>
               </Form.Group>
 
               <Button 
@@ -154,19 +207,6 @@ const Contact = () => {
             </Form>
           </Col>
         </Row>
-
-        {/* <Row className="contact-info mt-5">
-          <div className="contact-info">
-            <div className="info-item">
-              <i className="fas fa-envelope"></i>
-              <p>Email: xxxxxxxxxx@gmail.com</p>
-            </div>
-            <div className="info-item">
-              <i className="fas fa-phone"></i>
-              <p>Phone: +91-XXXXXXXXXX</p>
-            </div>
-          </div>
-        </Row> */}
       </Container>
     </section>
   );

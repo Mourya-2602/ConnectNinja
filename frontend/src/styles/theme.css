@@ -159,4 +159,21 @@ body {
 }
 .growth-plan-section .section-title {
     color: #b6f7b0;
+}
+
+@media (max-width: 768px) {
+  .strategy-heading,
+  .section-title,
+  .cofounders-heading,
+  .services-title,
+  .contact-text {
+    font-size: 3.5rem !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
+  }
+  .contact-hero h1{
+    font-size: 5.0rem !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
+  }
 } 

@@ -1,29 +1,33 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import '../styles/About.css';
+import yatharthImage from '../assets/yatharth.jpg';
+import RajulImage from '../assets/rajul.jpg';
+import SiddarthImage from '../assets/siddarth.jpg';
+
 
 const About = () => {
   const coFounders = [
     {
-      name: "Yatharth Deheriya",
+      name: "Yatharth Daheriya",
       role: "Founder ",
       bio: "Leads brand strategy and business growth.",
       linkedin: "https://www.linkedin.com/in/yatharth-daheriya-37358927b/",
-      img: "https://randomuser.me/api/portraits/men/32.jpg"
+      img: yatharthImage
     },
     {
       name: "Rajul Dwivedi",
       role: "Co-Founder",
       bio: "Heads content direction and creative campaigns.",
       linkedin: "https://www.linkedin.com/in/er-rajul-dwivedi-9a3387267/",
-      img: "https://randomuser.me/api/portraits/men/76.jpg"
+      img: RajulImage
     },
     {
       name: "Siddarth Belwanshi",
       role: "Co-Founder & CEO",
       bio: "Leads innovation and strategic growth at ConnectNinja",
       linkedin: "https://linkedin.com/in/yatharth-deheriya",
-      img: "https://randomuser.me/api/portraits/men/32.jpg"
+      img: SiddarthImage
     }
   ];
 
@@ -39,11 +43,9 @@ const About = () => {
             </p>
           </Col>
         </Row>
-
-        {/* Co-Founders Section */}
         <Row className="justify-content-center mb-4">
           <Col lg={12} className="text-center">
-            <h3 className="cofounders-heading"> Our Founder and Co Founders</h3>
+            <h3 className="cofounders-heading"> Our Team</h3>
           </Col>
         </Row>
         <Row className="co-founders-section">

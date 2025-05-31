@@ -1,8 +1,10 @@
+
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     color: white;
@@ -75,7 +77,7 @@
 }
 
 .hero-section-light {
-    background-color: #f9f8f3;
+    background-color: #FBFCEE;
     border-radius: 28px;
     margin: 2rem 0;
     padding: 3rem 1rem 3rem 1rem;
@@ -91,41 +93,46 @@
     color: #444;
     margin-bottom: 2rem;
     font-weight: 450;
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.4;
 }
 
 .strategy-heading {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 5.5rem;
     font-weight: 800;
-    font-family: 'Inter', sans-serif;
-    color: #0077b5;
+    font-family: 'Whiskey Joint';
+    letter-spacing: 9px;
+    color: #221F1B;
     margin-bottom: 1.5rem;
     letter-spacing: -1px;
 }
 
 .cta-button {
-    background: linear-gradient(90deg, #0077b5 0%, #b6f7b0 100%) !important;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 0.9rem 2.2rem;
-    margin-bottom: 2rem;
-    margin-top: 0.5rem;
+    background: #014750 !important;
+    border: none !important;
+    border-radius: 16px !important;
+    font-size: 1.65rem !important;
+    font-weight: 600 !important;
+    padding: 1.0rem 2.0rem !important;
+    margin-top: 1rem !important;
     color: #fff !important;
-    box-shadow: 0 2px 12px rgba(0,119,181,0.10);
-    transition: background 0.2s, box-shadow 0.2s;
+    /* box-shadow: 0 4px 18px rgba(0,119,181,0.15) !important; */
+    transition: all 0.2s ease !important;
+    background-image: none !important;
 }
 
-.cta-button:hover {
-    background: linear-gradient(90deg, #b6f7b0 0%, #0077b5 100%) !important;
+.cta-button:hover,
+.cta-button:focus,
+.cta-button:active {
+    background: #005983 !important;
     color: #fff !important;
-    box-shadow: 0 4px 24px rgba(0,119,181,0.18);
+    box-shadow: 0 4px 24px rgba(0,119,181,0.18) !important;
+    background-image: none !important;
+    outline: none !important;
 }
-
 
 @media (max-width: 991px) {
     .mt-navbar-gap {
@@ -157,7 +164,9 @@
 
 .strategy-section {
     margin-top: 2rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
+    background-color: #DCD2BC;
+    border-radius: 28px;
 }
 
 .strategy-section .hero-headline {
@@ -198,8 +207,10 @@
 .strategy-section .hero-subheadline {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.6;
+    font-size: 1.8rem;
+    font-family: 'Neuton';
+    line-height: 1.4;
+    max-width: 800px;
 }
 
 .strategy-section .cta-button {

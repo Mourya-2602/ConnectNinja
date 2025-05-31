@@ -34,8 +34,6 @@ const messageSchema = new mongoose.Schema({
     default: Date.now
   }
 });
-
-// Add index for better query performance
 messageSchema.index({ email: 1, createdAt: -1 });
 
 module.exports = mongoose.model('Message', messageSchema); 
