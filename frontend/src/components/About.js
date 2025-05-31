@@ -26,7 +26,7 @@ const About = () => {
       name: "Siddarth Belwanshi",
       role: "Co-Founder & CEO",
       bio: "Leads innovation and strategic growth at ConnectNinja",
-      linkedin: "https://linkedin.com/in/yatharth-deheriya",
+      linkedin: "https://www.linkedin.com/in/siddharth-belwanshi-358a99367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       img: SiddarthImage
     }
   ];
