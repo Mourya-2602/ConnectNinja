@@ -171,10 +171,3 @@ MONGODB_URI=your_mongodb_connection_string
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
-
-## Credits
-
-- Built by the ConnectNinja team.
-- Special thanks to all contributors and open-source libraries used.
-
----
