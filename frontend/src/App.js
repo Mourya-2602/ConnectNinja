@@ -1,8 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './styles/theme.css';
-import './styles/App.css';
 import NavigationBar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';

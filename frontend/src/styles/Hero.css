@@ -1,7 +1,4 @@
-
-
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -129,7 +126,7 @@
 .cta-button:active {
     background: #005983 !important;
     color: #fff !important;
-    box-shadow: 0 4px 24px rgba(0,119,181,0.18) !important;
+    /* box-shadow: 0 4px 24px rgba(0,119,181,0.18) !important; */
     background-image: none !important;
     outline: none !important;
 }
