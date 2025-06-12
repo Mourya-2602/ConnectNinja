@@ -15,9 +15,9 @@ const Methodology = () => {
           <Col md={4} className="step-col">
             <Card className="step-card">
               <Card.Body>
-                <div className="step-number">Step 01</div>
-                <div className="step-title">We Understand You</div>
-                <p className="step-description">We analyze your brand, audience, and market trends to create a strategy that fits your business.</p>
+                <div className="step-number"> Step 01</div>
+                <div className="step-title">We Learn Your Vision</div>
+                <p className="step-description">We start by understanding your goals, audience, and industry. Whether it’s a website, video, graphic, or CAD project — the strategy is built around you.</p>
               </Card.Body>
             </Card>
           </Col>
@@ -27,9 +27,9 @@ const Methodology = () => {
           <Col md={4} className="step-col">
             <Card className="step-card">
               <Card.Body>
-                <div className="step-number">Step 02</div>
-                <div className="step-title">We Bring Ideas to Life </div>
-                <p className="step-description">Stunning websites, engaging content and viral social media campaigns with the latest digital trends ensure your brand stands out.</p>
+                <div className="step-number"> Step 02 </div>
+                <div className="step-title">We Bring It to Life</div>
+                <p className="step-description">Our team creates sleek websites, engaging videos, standout graphics, and accurate CAD visuals — all aligned with your brand and purpose.</p>
               </Card.Body>
             </Card>
           </Col>
@@ -39,13 +39,13 @@ const Methodology = () => {
           <Col md={4} className="step-col">
             <Card className="step-card">
               <Card.Body>
-                <div className="step-number">Step 03</div>
-                <div className="step-title">We Grow with You </div>
-                <p className="step-description">We don't just launch and leave. We track, optimize, and refine so your business keeps evolving and growing.</p>
+                <div className="step-number"> Step 03</div>
+                <div className="step-title">We Help You Grow</div>
+                <p className="step-description">We don’t just deliver and leave. We track, optimize, and continuously refine to keep your brand evolving, growing, and performing at its best.</p>
               </Card.Body>
             </Card>
           </Col>
-          <p className="ending-text">Let's create something incredible together</p>
+          <p className="ending-text">Let’s build something that not only looks great — but truly works for your business.</p>
         </Row>
       </Container>
     </section>

@@ -24,13 +24,6 @@ body{
   color: #333;
 }
 
-.service-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
-}
-
 .service-item {
   position: relative;
   border-radius: 15px;
@@ -39,87 +32,28 @@ body{
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  min-height: 600px;
   padding: 2rem;
   background-color: #FBFCEE;
+  height: auto;
 }
 
 /* Social Media Management */
 .social-media {
-  background-color: #F1EAFF; 
+  background-color: #F4E2Fc; 
 }
 
-.social-media .service-content h3 {
-  color: #673AB7; 
+/* CAD*/
+.CAD {
+  background-color: #D9F0FE; 
+}
+/* VidEdit*/
+.VidEdit {
+  background-color: #DFF2FF; 
 }
 
-.social-media .service-content p {
-  color: #512DA8; 
-}
-
-/* Analytics & Reporting */
-.analytics {
-  background-color: #FFE582; 
-}
-
-.analytics .service-content h3 {
-  color: #1b1402; 
-}
-
-.analytics .service-content p {
-  color: #221407; 
-}
-
-/* Influencer Marketing */
-.influencer {
-  background-color: #FEE1F3; 
-}
-
-.influencer .service-content h3 {
-  color: #E91E63; 
-}
-
-.influencer .service-content p {
-  color: #C2185B; 
-}
-
-/* Paid Advertising */
-.advertising {
-  background-color: #E6F2FE; 
-}
-
-.advertising .service-content h3 {
-  color: #2196F3; 
-}
-
-.advertising .service-content p {
-  color: #1565C0; 
-}
-
-/* Website Building */
-.website {
-  background-color: #E2F8DE; 
-}
-
-.website .service-content h3 {
-  color: #4CAF50; 
-}
-
-.website .service-content p {
-  color: #2E7D32; 
-}
-
-/* Content Creation */
-.content {
-  background-color: #FFECDF; 
-}
-
-.content .service-content h3 {
-  color: #58401c; 
-}
-
-.content .service-content p {
-  color: #7c5433; 
+/* GRAPHICS */
+.GRAPHICS {
+  background-color: #FFDDED; 
 }
 
 .service-item:hover {
@@ -129,25 +63,10 @@ body{
 .service-item img {
   width: 100%;
   height: auto;
-  max-height: 500px;
   object-fit: contain;
   display: block;
   margin-bottom: 2rem;
   background-color: transparent;
-}
-
-.service-content {
-  padding: 1.5rem;
-}
-
-.service-content h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.service-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 
 .service-overlay {
@@ -160,20 +79,15 @@ body{
   color: white;
 }
 
-.service-overlay h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 .full-width {
   grid-column: 1 / -1;
   margin-bottom: 3rem;
-  min-height: 700px;
+  height: auto;
 }
 
 .full-width img {
-  max-height: 600px;
+  height: auto;
+  max-width: 100%;
 }
 
 /* Responsive Design */
@@ -188,19 +102,21 @@ body{
   }
 
   .service-item {
-    min-height: 500px;
     padding: 1.5rem;
+    height: auto;
   }
 
   .service-item img {
-    max-height: 400px;
+    height: auto;
+    max-width: 100%;
   }
 
   .full-width {
-    min-height: 600px;
+    height: auto;
   }
 
   .full-width img {
-    max-height: 500px;
+    height: auto;
+    max-width: 100%;
   }
 } 

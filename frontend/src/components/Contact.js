@@ -110,9 +110,9 @@ const Contact = () => {
           </Col>
           <Col lg={8}>
             <p className="contact-subtext">
-              Have questions? Want to inquire about our solutions? Please fill out your information to get in touch. 
-              Maybe you're looking for scalable, ROI+ growth. On perhaps you need help with your channel strategy. 
-              Our digital marketing experts love answering complex questions.
+            Ready to take your brand to the next level?
+Let’s chat about how we can help  whether it’s a website development, video editing, graphics design, or CAD project. We’re just a message away.
+
             </p>
           </Col>
         </Row>

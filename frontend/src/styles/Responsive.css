@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .strategy-heading,
+  .section-title,
+  .cofounders-heading,
+  .services-title,
+  /* .contact-hero h1, */
+  .contact-text {
+    font-size: 4.0rem !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
+  }
+  .contact-hero h1 {
+    font-size: 5.0rem !important;
+    letter-spacing: 1px !important;
+  }
+} 
